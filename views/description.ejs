@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="">
+    <style>
+    .checked {color: orange;}
+    </style>
+</head>
+<body>
+    <main class="main-container">
+        <div id="sub-container">
+            <img src="<%=Data[0].Bookimage%>" alt="book image" id="book-image" />
+            <div id="description-holder">
+                <div id="book-name"><%=Data[0].Bookname%></div>
+                <div id="book-description"><%=Data[0].Description%></div>
+                <div id="book-author"><span><%=Data[0].Bookauthor%></span></div>
+                <div id="book-rating"><span>Book Rating</span></div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+
+        </div>
+
+    </main>
+    <main id="comments">
+      <header>Review Comments</header>
+      <main id="comments-view">
+        Comments
+      </main>
+      <footer>
+        <input type="text" id="review-input" placeholder="write your review" onkeydown="addComment(event)"/>
+      </footer>
+    </main>
+    <form id="delete-btn" method="post" action="/delete">
+        <input style="visibility: hidden;" name="id" value="<%=Data[0].id%>" />
+        <button type="submit">Delete</button>
+    </form>
+    <input value="<%=Data[0].id%>" id="book-id" hidden/>
+</body>
+</html>

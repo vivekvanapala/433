@@ -1,0 +1,25 @@
+#add-form-container {
+    display: none;
+    /* align-items: center; */
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #00acee;
+    overflow: hidden;
+}
+
+#book-add-form {
+    width: 40%;
+    background-color: rgb(226, 226, 226);
+    height: 550px;
+    margin-top: 50px;
+    display: flex;
+    padding: 20px 1%;
+    border-radius: 8px;
+    flex-direction: column;
+    overflow: hidden;
+}
