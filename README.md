@@ -1,1 +1,1 @@
-
+Developed an api using express.js which allows user to add new book to Mysql database and also delete book from database.Used sql to retrieve data from database.Also displayed books available on database using Dynamic Html.Sorted the books based on bookname
